@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Encapsuler un personnage</title>
+    <script src="librairie/easeljs-0.8.2.min.js"></script>
+    <script src="ArrierePlan.js"></script>
+    <script src="PersonnageBleu.js"></script>
+    <script src="PersonnageRouge.js"></script>
+    <script src="Livre.js"></script>
+    <script src="Manette.js"></script>
+    <script src="lib/MultiNode.js"></script>
+    <script defer src="App.js"></script>
+
+     <style>
+      html{overflow: hidden; background-color:blue;}
+      #dessin{background-color:white;}
+      #scoreContainer{ position:absolute; top: 20px; left: 20px; font-size:24px;}
+
+      body{overflow: hidden; margin:0;padding:0;}
+
+    </style>
+</head>
+<body>
+
+  <form id="formulaire-authentification">
+        <fieldset>
+            <lable>Pseudonyme</lable>
+            <input type="text" id="champ-pseudonyme"/>
+            <input type="submit" value="Authentification" id="bouton-authentification"/>
+        </fieldset>
+  </form>
+  <form id="formulaire-jeu">
+  <canvas id="dessin" width="1919" height="800"></canvas>
+  <div id="scoreContainer">SCORE:<span id="score">0</span></div>
+  </form>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
