@@ -16,8 +16,6 @@
         this.multiNode.apprendreAuthentification = (pseudonyme) => this.apprendreAuthentification(pseudonyme);
         this.multiNode.recevoirVariable = (variable) => this.recevoirVariable(variable);
         this.listeJoueur = {};
-        //this.pseudonymeJoueur = "";
-        //this.pseudonymeAutreJoueur = "";
         this.champPseudonyme = document.getElementById("champ-pseudonyme");
 
         this.formulaireAuthentification = document.getElementById("formulaire-authentification");
@@ -300,6 +298,7 @@
               pseudonyme : this.pseudonymeActif,
               valeur : -1
                 };
+                 //this.multiNode.posterVariableTextuelle(App.MESSAGE JSON.stringify(message));
               this.multiNode.posterVariableTextuelle(App.MESSAGE.SCOREDIMINU, JSON.stringify(message));
             }
         }
