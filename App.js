@@ -417,16 +417,16 @@
   verifierPointduJoueur(nouveauPointDuJoueur){
     console.log("verifierPointduJoueur()=>valeur" + nouveauPointDuJoueur);
     this.listeJoueur[this.pseudonymeActif].score = nouveauPointDuJoueur;
-    this.validerFinPartie();
+   // this.validerFinPartie();
   }
 
   verifierPointduAutreJoueur(nouveauPointDuJoueur){
     console.log("verifierPointduAutreJoueur()=>valeur" + nouveauPointDuJoueur);
     this.listeJoueur[this.pseudonymeAutre].score = nouveauPointDuJoueur;
-    this.validerFinPartie();
+    //this.validerFinPartie();
   }
 
-  validerFinPartie(){
+  /*validerFinPartie(){
     if(this.listeJoueur[this.pseudonymeActif].score >= 1){
       console.log(this.listeJoueur[this.pseudonymeJoueur]);
       alert("Vous avez gagné!");
@@ -434,7 +434,7 @@
       alert("Vous avez perdu!");
     }
 
-  }
+  }/*
  }
 
  App.NOMBRE_JOUEUR_REQUIS = 2;
